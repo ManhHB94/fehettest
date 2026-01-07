@@ -1,0 +1,53 @@
+Modified Wald Test Add-in for EViews
+Version: 1.1
+Author: Hoang Ba Manh
+Date: 06-Jan-2026
+Support: hbmanh9492@gmail.com
+
+Description:
+This add-in implements the Modified-Wald and Kezdi test 
+	for heteroskedasticity in fixed-effects models.
+
+1. Modified-Wald test by Greene (2000)
+
+Hypotheses:
+- H0: Groupwise Homoskedasticity.
+- H1: Groupwise heteroskedasticity.
+
+Requirements:
+- Large T panel data.
+- Cross-section Fixed-effects.
+
+Limitations:
+- Not appropriate for small-T panels.
+
+
+2. LM test by Kezdi (2003)
+
+Null hypothesis:
+- H1: Cross-sectional homoskedasticity.
+- H2: Serially uncorrelated: e_it, x_it or both.
+- H3: Homoskedasticity and serially uncorrelated.
+
+Alternative hypothesis
+- Ha: System heteroskedasticity.
+
+Requirements:
+- Large N, small T panel data.
+- Cross-section Fixed-effects.
+
+Limitations:
+- Not appropriate for small-N panels.
+
+Usage:
+Select the Equation object, then run phettest from the add-in menu
+
+References:
+- Greene, W.H. (2000) Econometric Analysis. 4th Edition, Prentice Hall, Englewood Cliffs.
+- Baum, C. (2024). XTTEST3: Stata module to compute Modified Wald statistic for groupwise heteroskedasticity.
+- Kezdi, G. (2003). Robust standard error estimation in fixed-effects panel models. SSRN. https://doi.org/10.2139/ssrn.596988
+- Manh Hoang Ba, 2025. "XTTEST4: Stata module to calculate heterokedasticity tests for fixed effects models," Statistical Software Components S459492, Boston College Department of Economics, revised 19 Nov 2025.
+
+Disclaimer:
+- This add-in is provided "as is" without any warranty.
+- The author is not responsible for errors or misuse of this software.
