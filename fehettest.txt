@@ -1,7 +1,7 @@
-Modified Wald Test Add-in for EViews
-Version: 1.1
-Author: Hoang Ba Manh
-Date: 06-Jan-2026
+EViews Add-in perform heteroskedasticity test for fixed-effects models 
+Version: 1.2
+Author: Manh Hoang-Ba
+Date: 13-Jul-2026
 Support: hbmanh9492@gmail.com
 
 Description:
@@ -39,12 +39,30 @@ Requirements:
 Limitations:
 - Not appropriate for small-N panels.
 
+3. LM test by Juhl & Sosa-Escudero (2014)
+
+Null hypothesis:
+- H0: homoskedasticity.
+
+Alternative hypothesis
+- H1: Heteroskedasticity.
+- H2: Groupwise (or System) Heteroskedasticity.
+
+Requirements:
+- Large N, small T panel data.
+- Cross-section Fixed-effects.
+
+Limitations:
+- Not appropriate for small-N panels.
+
+
 Usage:
-Select the Equation object, then run phettest from the add-in menu
+Select the Equation object, then run fehettest from the add-in menu
 
 References:
 - Greene, W.H. (2000) Econometric Analysis. 4th Edition, Prentice Hall, Englewood Cliffs.
 - Baum, C. (2024). XTTEST3: Stata module to compute Modified Wald statistic for groupwise heteroskedasticity.
+- Juhl, T., & Sosa-Escudero, W. (2014). Testing for heteroskedasticity in fixed effects models. Journal of econometrics, 178, 484-494.
 - Kezdi, G. (2003). Robust standard error estimation in fixed-effects panel models. SSRN. https://doi.org/10.2139/ssrn.596988
 - Manh Hoang Ba, 2025. "XTTEST4: Stata module to calculate heterokedasticity tests for fixed effects models," Statistical Software Components S459492, Boston College Department of Economics, revised 19 Nov 2025.
 
